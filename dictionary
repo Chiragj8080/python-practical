@@ -9,3 +9,44 @@ print(temp)
 
 
 
+'''Create factorial_of given number.py'''
+my_dict = {'data1':100,'data2':-54,'data3':247}
+result=1
+for key in my_dict:    
+    result=result * my_dict[key]
+
+print(result)
+
+
+
+
+'''Create filter the height and _width of student _store in dictionary.py'''
+def filter_data(students):
+    result = {k: s for k, s in students.items() if s[0] >=6.0 and s[1] >=70}
+    return result    
+ 
+students = {'Cierra Vega': (6.2, 70), 'Alden Cantrell': (5.9, 65), 'Kierra Gentry': (6.0, 68), 'Pierre Cox': (5.8, 66)}
+print("Original Dictionary:")
+print(students)
+print("\nHeight > 6ft and Weight> 70kg:")
+print(filter_data(students))
+
+
+
+
+'''Create length_dictionary.py'''
+car={"brand":"audi","model":"R8","price":"8000000000","year":"2022","owner":"Akhil"}
+print("car detail:")
+forx in car.items():
+  print (x)
+print("\n  length of car dictionary:",len(car))
+
+
+
+
+'''Create merge_two_dictionary.py'''
+d1 = {'a': 100, 'b': 200}
+d2 = {'x': 300, 'y': 200}
+d = d1.copy()
+d.update(d2)
+print(d)
